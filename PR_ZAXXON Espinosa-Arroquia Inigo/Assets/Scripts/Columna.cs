@@ -12,7 +12,7 @@ public class Columna : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Nave = GameObject.Find("Spaceship");
+        Nave = GameObject.Find("Cubo");
         cubo = Nave.GetComponent<Cubo>();
         mySpeed = cubo.speed;
     }
@@ -34,7 +34,7 @@ public class Columna : MonoBehaviour
     {
         Debug.Log("objeto1 ha colisionado con objeto2");
         GameObject objeto1 = GameObject.FindGameObjectWithTag("Respawn");
-        if (collision.gameObject.name == "Spaceship")
+        if (collision.gameObject.name == "Cubo")
         {
             Debug.Log("objeto1 ha colisionado con objeto3");
 

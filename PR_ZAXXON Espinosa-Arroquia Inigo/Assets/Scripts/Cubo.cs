@@ -5,16 +5,20 @@ using UnityEngine;
 public class Cubo : MonoBehaviour
 {
     public float speed = 2.5f;
-
+    public GameObject Columna;
+    private Columna columna;
     public GameObject Nave;
     private Cubo cubo;
     public float mySpeed;
+
+    bool alive;
     // Start is called before the first frame update
     void Start()
     {
-        Nave = GameObject.Find("Spaceship");
+        Nave = GameObject.Find("Cubo");
         cubo = Nave.GetComponent<Cubo>();
         mySpeed = cubo.speed;
+        alive = true;
     }
 
     // Update is called once per frame
@@ -22,7 +26,7 @@ public class Cubo : MonoBehaviour
     {
          MoverNave();
          
-         if (speed < 50f )
+         if (speed < 50f && alive == true)
         {
             speed = speed + 0.1f;
         }
@@ -71,11 +75,12 @@ public class Cubo : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        GameObject objeto1 = GameObject.Find("Spaceship");
+        GameObject objeto1 = GameObject.Find("Cubo");
         if (collision.gameObject.tag == "Respawn")
         {
             Debug.Log("objeto1 ha colisionado con objeto3");
             speed = 0f;
+            alive = false;
         }
 
     }
