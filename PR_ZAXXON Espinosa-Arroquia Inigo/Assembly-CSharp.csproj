@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camara.cs" />
+     <Compile Include="Assets\Scripts\CambiodeEscena.cs" />
      <Compile Include="Assets\Scripts\Columna.cs" />
      <Compile Include="Assets\Scripts\CrearColumnas.cs" />
      <Compile Include="Assets\Scripts\Cubo.cs" />
