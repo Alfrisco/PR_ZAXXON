@@ -45,6 +45,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Camara.cs" />
      <Compile Include="Assets\Scripts\CambiodeEscena.cs" />
      <Compile Include="Assets\Scripts\Columna.cs" />
