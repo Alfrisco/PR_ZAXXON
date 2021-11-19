@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Cubo : MonoBehaviour
 {
@@ -93,6 +94,7 @@ public class Cubo : MonoBehaviour
             speed = 0f;
             rend.enabled = false;
             alive = false;
+            SceneManager.LoadScene("GameOver");
         }
 
     }

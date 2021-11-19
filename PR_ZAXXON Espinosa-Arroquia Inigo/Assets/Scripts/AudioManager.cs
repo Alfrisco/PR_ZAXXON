@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
 
     private void InitializeVolume()
     {
-        musicSource.volume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
+        musicSource.volume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
 
         sliderMusic.value = musicSource.volume;
     }
