@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Columna.cs" />
      <Compile Include="Assets\Scripts\CrearColumnas.cs" />
      <Compile Include="Assets\Scripts\Cubo.cs" />
+     <None Include="Assets\Materials\SkySerie Freebie\Hdri setup.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Iñigo/Documents/GitHub/PR_ZAXXON/PR_ZAXXON Espinosa-Arroquia Inigo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
